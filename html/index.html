@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/destyle.css">
+</head>
+<body>
+  <header>
+    <!--header_common~ 読み込み -->
+    
+  </header>
+  <div class="contents">
+    <!-- flexで横並びにする。 -->
+    <div class="news">
+      <div class="news__title">ニュース</div>
+      <!-- 用語とその説明という関係じゃないので、dldtddは使用せず -->
+      <ul class="news__list">
+        <li class="news__day">
+          <a class="news__link" href=""></a>
+        </li>
+      </ul>
+    </div>
+    <div class="service">
+      <div class="service__title">サービス</div>
+      <ul class="service__list">
+        <!-- backgound:#fff;、flex+flex-flow,gap指定で縦の間隔調整 -->
+        <li class="service__item">
+          <img  class="service__img" src="" alt="人材紹介業">
+          <span class="service__subtitle">人材紹介業</span>
+          <span class="service__explanation">新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</span>
+        </li>
+        <li class="service__item">
+          <img  class="service__img" src="" alt="スクール事業">
+          <span class="service__subtitle">スクール事業</span>
+          <span class="service__explanation">オンラインでWeb制作を学べるスクールを運営しています。</span>
+        </li>
+        <li class="service__item">
+          <img  class="service__img" src="" alt="Webメディア運営">
+          <span class="service__subtitle">Webメディア運営</span>
+          <span class="service__explanation">人事系メディアやWebデザイン関連のメディアなどを複数運営しています。</span>
+        </li>                
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <!-- footer_common~読み込み -->
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
