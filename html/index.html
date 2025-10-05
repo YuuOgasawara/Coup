@@ -9,52 +9,64 @@
 <body>
   <header>
     <!--header_common~ 読み込み -->
-    <img src="../img/pc_mv.png" alt="START 仕事に最高のスタートを">
-    <img src="../img/sp_mv.png" alt="START 仕事に最高のスタートを">
+    <div class="header__mv">
+      <img class="view-pc" src="../img/pc_mv.png" alt="START 仕事に最高のスタートを">
+      <img class="view-sp" src="../img/sp_mv.png" alt="START 仕事に最高のスタートを">
+    </div>
   </header>
   <div class="contents">
     <!-- flexで横並びにする。 -->
-    <div class="news">
-      <h2 class="news__title">ニュース</h2>
+    <section class="news">
+      <h2>ニュース</h2>
       <!-- 用語とその説明という関係じゃないので、dldtddは使用せず -->
       <ul class="news__list c-news_list">
-        <li class="news__day">
+        <li>
           <a class="news__link" href="#">
-            <span>2030.02.10</span>
+            <span class="news__day">2030.02.10</span>
             <span>コーポレートサイトをリニューアルしました。</span>
           </a>
+        </li>
+        <li>
           <a class="news__link" href="#">
-            <span>2030.02.08</span>
+            <span class="news__day">2030.02.08</span>
             <span>採用を強化中です！一緒に働きませんか？</span>
           </a>
+        </li>
+        <li>  
           <a class="news__link" href="#">
-            <span>2030.02.02</span>
+            <span class="news__day">2030.02.02</span>
             <span>人材紹介SNS『スタート』をリリースしました。3/31まで新規登録キャンペーンを開催中です！サービス内で使える500ポイントをプレゼント！</span>
           </a>          
         </li>
       </ul>
-    </div>
-    <div class="service">
-      <h2 class="service__title">サービス</h2>
+    </section>
+    <section class="service">
+      <h2>サービス</h2>
       <ul class="service__list">
         <!-- backgound:#fff;、flex+flex-flow,gap指定で縦の間隔調整 -->
         <li class="service__item">
-          <img  class="service__img" src="" alt="人材紹介業">
-          <span class="service__subtitle">人材紹介業</span>
+          <div class="service__title">
+            <img  class="service__img" src="../img/work.png" alt="人材紹介業">
+            <p class="service__subtitle">人材紹介業</p>
+          </div>   
           <span class="service__explanation">新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</span>
         </li>
         <li class="service__item">
-          <img  class="service__img" src="" alt="スクール事業">
-          <span class="service__subtitle">スクール事業</span>
+          <div class="service__title">
+            <img  class="service__img" src="../img/location_city_black_24dp.png" alt="スクール事業">
+            <p class="service__subtitle">スクール事業</p>
+          </div>
           <span class="service__explanation">オンラインでWeb制作を学べるスクールを運営しています。</span>
         </li>
         <li class="service__item">
-          <img  class="service__img" src="" alt="Webメディア運営">
-          <span class="service__subtitle">Webメディア運営</span>
+          <div class="service__title">
+            <img  class="service__img" src="../img/desktop_windows_24dp.png" alt="Webメディア運営">
+            <p class="service__subtitle">Webメディア運営</p>
+          </div>
           <span class="service__explanation">人事系メディアやWebデザイン関連のメディアなどを複数運営しています。</span>
         </li>                
       </ul>
-    </div>
+    </section>
   </div>
   <footer>
     <!-- footer_common~読み込み -->

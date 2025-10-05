@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+.view-pc {
+  display: block;
+}
+
+.view-sp {
+  display: none;
+}
+
+h2 {
+  color: #DD1B57;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.header__menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 35px;
+}
+
+.gnav__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.gnav__link {
+  color: #151515;
+  font-size: 16px;
+  font-weight: bold;
+}
+.gnav__link-actiive {
+  color: #DD1B57;
+}
+
+.header__mv {
+  width: 100%;
+}
+.header__mv img {
+  width: 100%;
+}
+
+.contents {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.c-news_list li {
+  border-bottom: 1px solid #E8E8E8;
+  padding: 20px 0;
+}
+.c-news_list .news__link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.c-news_list .news__day {
+  font-family: "Roboto", sans-serif;
+}
+
+.news {
+  display: flex;
+  gap: 64px;
+  margin: 55px 0 0;
+}
+
+.service {
+  display: block;
+  margin: 90px 0 0;
+}
+.service .service__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 45px 0 0;
+}
+.service .service__item {
+  width: 350px;
+  border-radius: 10px;
+  display: block;
+  padding: 50px;
+  box-shadow: 1px #333;
+}
+.service .service__img {
+  text-align: center;
+}
+.service .service__subtitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+.service .service__explanation {
+  margin: 20px 0 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  gap: 15px;
+  width: 100%;
+  margin: 90px 0 0;
+  padding: 60px 60px 50px 160px;
+  background: #DD1B57;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer__list {
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .view-pc {
+    display: none;
+  }
+  .view-sp {
+    display: block;
+  }
+  .contents {
+    width: 750px;
+    margin: 0 20px;
+  }
+  .news {
+    flex-flow: column;
+    gap: 26px;
+    margin: 35px 0 0;
+  }
+  .service {
+    margin: 50px 0 0;
+  }
+  .footer__container {
+    gap: 20px;
+    margin: 70px 0 0;
+    padding: 40px 20px 30px;
+  }
+}/*# sourceMappingURL=destyle.css.map */
