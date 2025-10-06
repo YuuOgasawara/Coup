@@ -111,6 +111,26 @@ a:hover {
   margin: 20px 0 0;
 }
 
+.message {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.message .message__subtitle {
+  text-align: center;
+}
+.message .message__title {
+  text-align: center;
+}
+.message .message__main {
+  width: 790px;
+  margin: 40px 0 60px;
+}
+.message .message__ceo {
+  float: left;
+  margin: 0 15px 20px 0;
+}
+
 .footer__container {
   display: flex;
   justify-content: flex-start;
@@ -136,6 +156,9 @@ a:hover {
   }
   .view-sp {
     display: block;
+  }
+  h2 {
+    font-size: 24px;
   }
   .contents {
     width: 750px;

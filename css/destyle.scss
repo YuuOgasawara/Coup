@@ -115,6 +115,34 @@ a{
 }
 //トップページここまで
 
+//メッセージ
+.message{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  .message__subtitle{
+    text-align: center;
+  }
+
+  .message__title{
+    text-align: center;
+  }
+
+  .message__main{
+    width: 790px;
+    margin: 40px 0 60px;
+  }
+  .message__ceo{
+    float: left;
+    margin: 0 15px 20px 0;
+  }
+
+
+}
+
+//メッセージここまで
+
 .footer__container{
   display: flex;
   justify-content: flex-start;
@@ -142,6 +170,10 @@ a{
   }
   .view-sp{
     display: block;
+  }
+
+  h2{
+    font-size: 24px;
   }
 
   .contents{
