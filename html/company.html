@@ -9,26 +9,40 @@
 <body>
   <header>
     <!--header_common~ 読み込み -->
-    <img class="view-pc" src="../img/pc_overview-header.png" alt="会社概要">
-    <img class="view-sp" src="../img/sp_overview-header.png" alt="会社概要">
+    <div class="header__mv">
+      <img class="view-pc" src="../img/pc_overview-header.png" alt="会社概要">
+      <img class="view-sp" src="../img/sp_overview-header.png" alt="会社概要">
+    </div>
+    
   </header>
   <div class="contents">
     <section class="overview">
       <dl class="overview__list">
-        <dt class="overview__title">社名</dt>
-        <dd class="overview__element">株式会社START</dd>
+        <div class="overview__element">
+          <dt class="overview__title">社名</dt>
+          <dd>株式会社START</dd>
+        </div>
+        
+        <div class="overview__element">
+          <dt class="overview__title">設立</dt>
+          <dd>2025.02.10</dd>
+        </div>
 
-        <dt class="overview__title">設立</dt>
-        <dd class="overview__element">2025.02.10</dd>
+        <div class="overview__element">
+          <dt class="overview__title">代表取締役</dt>
+          <dd>ショーン・デイビット・ジュニア</dd>
+        </div>
 
-        <dt class="overview__title">代表取締役</dt>
-        <dd class="overview__element">ショーン・デイビット・ジュニア</dd>
+        <div class="overview__element">
+          <dt class="overview__title">資本金</dt>
+          <dd>10,000,000円</dd>
+        </div>
 
-        <dt class="overview__title">資本金</dt>
-        <dd class="overview__element">10,000,000円</dd>
+        <div class="overview__element">
+          <dt class="overview__title">所在地</dt>
+          <dd>〒555-5555 東京都千代田区 スタートビルディング 606</dd>
+        </div>
 
-        <dt class="overview__title">所在地</dt>
-        <dd class="overview__element">〒555-5555 東京都千代田区 スタートビルディング 606</dd>
       </dl>
 
       <div class="overview__map">
@@ -36,17 +50,21 @@
       </div>
       
       <ul class="c-news_list">
-        <li class="news__day">
-          <a class="news__link" href="#">
-            <span>2030.02.10</span>
+        <li>
+          <a class="c-news_link" href="#">
+            <span class="c-news_day">2030.02.10</span>
             <span>コーポレートサイトをリニューアルしました。</span>
           </a>
-          <a class="news__link" href="#">
-            <span>2030.02.08</span>
+        </li>
+        <li>
+          <a class="c-news_link" href="#">
+            <span class="c-news_day">2030.02.08</span>
             <span>採用を強化中です！一緒に働きませんか？</span>
           </a>
-          <a class="news__link" href="#">
-            <span>2030.02.02</span>
+        </li>
+        <li>  
+          <a class="c-news_link" href="#">
+            <span class="c-news_day">2030.02.02</span>
             <span>人材紹介SNS『スタート』をリリースしました。3/31まで新規登録キャンペーンを開催中です！サービス内で使える500ポイントをプレゼント！</span>
           </a>          
         </li>

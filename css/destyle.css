@@ -67,12 +67,12 @@ a:hover {
   border-bottom: 1px solid #E8E8E8;
   padding: 20px 0;
 }
-.c-news_list .news__link {
+.c-news_list .c-news_link {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.c-news_list .news__day {
+.c-news_list .c-news_day {
   font-family: "Roboto", sans-serif;
 }
 
@@ -129,6 +129,25 @@ a:hover {
 .message .message__ceo {
   float: left;
   margin: 0 15px 20px 0;
+}
+
+.overview .overview__list {
+  margin: 70px 0 50px;
+}
+.overview .overview__element {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E8E8E8;
+  padding: 25px 20px;
+}
+.overview .overview__title {
+  font-weight: bold;
+}
+.overview .overview__map {
+  margin: 0 0 110px;
+}
+.overview .overview__map iframe {
+  width: 100%;
 }
 
 .footer__container {
