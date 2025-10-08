@@ -81,8 +81,6 @@ a{
 //トップページ
 .news{
   display: flex;
-  gap: 64px;
-  margin: 55px 0 0;
 }
 
 .service{
@@ -187,7 +185,14 @@ a{
   gap: 30px;
 }
 
+//PC版
+@media screen and (min-width: 769px) {
+  .news{
+    gap: 64px;
+  }
+}
 
+//SP版
 @media screen and (max-width: 768px){
 
   .view-pc{
@@ -198,24 +203,43 @@ a{
   }
 
   h2{
-    font-size: 24px;
+    font-size: 32px;
+    margin: 20px 0 0;
   }
 
   .contents{
-    width: 750px;
+    width: 100%;
     margin: 0 20px;
   }
-
+//ニュース
   .news{
     flex-flow: column;
-    gap: 26px;
-    margin: 35px 0 0;
+    .c-news_list{
+      padding: 0;
+    }
+    .c-news_link{
+      flex-flow: column;
+      align-items: flex-start;
+    }
   }
-
+//ニュースここまで
+//サービス
   .service{
     margin: 50px 0 0;
+    .service__list{
+      flex-flow: column;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+    .service__item{
+      padding: 35px;
+    }
+    .service__title{
+      text-align: center;
+    }
   }
-
+//サービスここまで
 
   .footer__container{
     gap: 20px;

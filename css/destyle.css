@@ -78,8 +78,6 @@ a:hover {
 
 .news {
   display: flex;
-  gap: 64px;
-  margin: 55px 0 0;
 }
 
 .service {
@@ -169,6 +167,11 @@ a:hover {
   gap: 30px;
 }
 
+@media screen and (min-width: 769px) {
+  .news {
+    gap: 64px;
+  }
+}
 @media screen and (max-width: 768px) {
   .view-pc {
     display: none;
@@ -177,19 +180,37 @@ a:hover {
     display: block;
   }
   h2 {
-    font-size: 24px;
+    font-size: 32px;
+    margin: 20px 0 0;
   }
   .contents {
-    width: 750px;
+    width: 100%;
     margin: 0 20px;
   }
   .news {
     flex-flow: column;
-    gap: 26px;
-    margin: 35px 0 0;
+  }
+  .news .c-news_list {
+    padding: 0;
+  }
+  .news .c-news_link {
+    flex-flow: column;
+    align-items: flex-start;
   }
   .service {
     margin: 50px 0 0;
+  }
+  .service .service__list {
+    flex-flow: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  .service .service__item {
+    padding: 35px;
+  }
+  .service .service__title {
+    text-align: center;
   }
   .footer__container {
     gap: 20px;
