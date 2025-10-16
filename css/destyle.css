@@ -77,7 +77,18 @@ a:hover {
 
 .service {
   display: block;
+  position: relative;
   margin: 90px 0 0;
+}
+.service::before {
+  position: absolute;
+  content: "SERVICE";
+  top: -20%;
+  right: 0;
+  color: #F2F2F2;
+  font-size: 168px;
+  font-weight: bold;
+  z-index: -1;
 }
 .service .service__list {
   display: flex;
@@ -93,7 +104,7 @@ a:hover {
   padding: 50px;
   box-shadow: 1px #333;
 }
-.service .service__img {
+.service .service__title {
   text-align: center;
 }
 .service .service__subtitle {
@@ -206,6 +217,11 @@ a:hover {
   .service {
     margin: 50px 0 0;
   }
+  .service::before {
+    top: -2%;
+    right: -5%;
+    font-size: 70px;
+  }
   .service .service__list {
     flex-flow: column;
     gap: 20px;
@@ -214,9 +230,6 @@ a:hover {
   }
   .service .service__item {
     padding: 35px;
-  }
-  .service .service__title {
-    text-align: center;
   }
   .message .message__title {
     font-size: 24px;

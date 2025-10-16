@@ -81,7 +81,18 @@ a{
 
 .service{
   display: block;
+  position: relative;
   margin: 90px 0 0;
+  &::before{
+    position: absolute;
+    content: "SERVICE";
+    top: -20%;
+    right: 0;
+    color: #F2F2F2;
+    font-size: 168px;
+    font-weight: bold;
+    z-index: -1;
+  }
   .service__list{
     display: flex;
     align-items: center;
@@ -96,7 +107,7 @@ a{
     padding: 50px;
     box-shadow: 1px #333;
   }
-  .service__img{
+  .service__title{
     text-align: center;
   }
   .service__subtitle{
@@ -236,6 +247,11 @@ a{
 //サービス
   .service{
     margin: 50px 0 0;
+    &::before{
+      top: -2%;
+      right: -5%;
+      font-size: 70px;
+    }
     .service__list{
       flex-flow: column;
       gap: 20px;
@@ -244,9 +260,6 @@ a{
     }
     .service__item{
       padding: 35px;
-    }
-    .service__title{
-      text-align: center;
     }
   }
 //サービスここまで
