@@ -8,7 +8,34 @@
 </head>
 <body>
   <header>
-    <!--header_common~ 読み込み -->
+    <div class="header__menu">
+      <div class="top__link">
+        <a href="."><img class="top__img" src="../img/start_logo.png" alt="START"></a>
+      </div>
+      <nav class="gnav view-pc">
+        <ul class="gnav__list">
+          <li class="gnav__item"><a class="gnav__link" href=".">ホーム</a></li>
+          <li class="gnav__item"><a class="gnav__link" href="message.html">メッセージ</a></li>
+          <li class="gnav__item"><a class="gnav__link" href="company.html">会社概要</a></li>
+        </ul>
+      </nav>
+      <!-- PC時はdisplay:none; -->
+      <nav class="spMenu view-sp">
+        <button class="spMenu__btn">
+          <img src="../img/menu_btn.png" alt="メニュー">
+        </button>
+        <div id="spMenu__openMenu" class="spMenu__openMenu">
+          <button class="spMenu__close">
+            <img src="../img/menu_close.png" alt="閉じる">
+          </button>
+          <ul class="spMenu__list">
+            <li class="spMenu__item"><a class="spMenu__link" href=".">ホーム</a></li>
+            <li class="spMenu__item"><a class="spMenu__link" href="message.html">メッセージ</a></li>
+            <li class="spMenu__item"><a class="spMenu__link" href="company.html">会社概要</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <div class="header__mv">
       <img class="view-pc" src="../img/pc_message_header.png" alt="メッセージ">
       <img class="view-sp" src="../img/sp_message_header.png" alt="メッセージ">
@@ -34,9 +61,16 @@
   </div>
 
   <footer>
-     <!-- footer_common~読み込み -->
+    <div class="footer__container">
+      <ul class="footer__list">
+        <li class="footer__item"><a class="footer__link" href=".">ホーム</a></li>
+        <li class="footer__item"><a class="footer__link" href="message.html">メッセージ</a></li>
+        <li class="footer__item"><a class="footer__link" href="company.html">会社概要</a></li>
+      </ul>
+      <div class="footer__copyright">©START</div>
+    </div>
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="../js/script.js"></script>
 </body>
 </html>

@@ -1,6 +1,16 @@
 *{
   box-sizing: border-box;
 }
+button{
+  border: none;
+  background: transparent;
+}
+ul{
+  padding: 0;
+}
+dd{
+  margin: 0;
+}
 
 .view-pc{
   display: block;
@@ -32,21 +42,63 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 35px;
 }
 
-.gnav__list{
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
+.gnav{
+  .gnav__list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 
-.gnav__link{
-  color: #151515;
-  font-size: 16px;
-  font-weight: bold;
-  &-actiive{
+  .gnav__link{
+    color: #151515;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .gnav__link-current{
     color: #DD1B57;
+  }
+}
+
+
+
+.spMenu{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  .spMenu__openMenu{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #DD1B57;
+    width: 200px;
+    height: 100%;
+    z-index: 100;
+  }
+  .spMenu__openMenu-active{
+    display: block;
+  }
+  .spMenu__close{
+    position: absolute;
+    right: 0;
+  }
+  .spMenu__list{
+    margin: 85px 0 0;
+    text-align: center;
+  }
+  .spMenu__item{
+    margin: 0 0 20px;
+  }
+  .spMenu__link{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .spMenu__link-current{
+    opacity: 0.8;
   }
 }
 
@@ -58,7 +110,7 @@ a{
 }
 
 .contents{
-  width: 1200px;
+  width: 1400px;
   margin: 0 auto;
 }
 
@@ -77,6 +129,7 @@ a{
 //トップページ
 .news{
   display: flex;
+  margin: 45px 0 0;
 }
 
 .service{
@@ -105,7 +158,6 @@ a{
     border-radius: 10px;
     display: block;
     padding: 50px;
-    box-shadow: 1px #333;
   }
   .service__title{
     text-align: center;
@@ -191,8 +243,15 @@ a{
   gap: 30px;
 }
 
+.footer__link{
+  color: #fff;
+}
+
 //PC版
 @media screen and (min-width: 769px) {
+  .header__menu{
+    padding: 25px 35px;
+  }
   .news{
     gap: 64px;
   }
@@ -227,6 +286,14 @@ a{
   h2{
     font-size: 32px;
     margin: 20px 0 0;
+  }
+
+  .header__menu{
+    padding: 0 0 0 25px;
+    .top__img{
+      width: 107px;
+      height: 21px;
+    }
   }
 
   .contents{
