@@ -148,19 +148,21 @@ a{
   }
   .service__list{
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 30px;
     margin: 45px 0 0;
   }
   .service__item{
     width: 350px;
-    border-radius: 10px;
+    min-height: 266px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #333;
     display: block;
-    padding: 50px;
+    padding: 33px;
   }
   .service__title{
     text-align: center;
+    margin: 0 0 12px;  
   }
   .service__subtitle{
     font-size: 18px;
@@ -208,11 +210,13 @@ a{
   .overview__element{
     display: flex;
     align-items: center;
+    gap: 120px;
     border-bottom: 1px solid #E8E8E8;
     padding: 25px 20px;
   }
   .overview__title{
     font-weight: bold;
+    min-width: 80px;
   }
   .overview__map{
     margin: 0 0 110px;
@@ -320,12 +324,14 @@ a{
       font-size: 70px;
     }
     .service__list{
+      align-items: center;
       flex-flow: column;
       gap: 20px;
       padding: 0;
-      margin: 0;
+      margin: 15px 0 0;
     }
     .service__item{
+      min-height: 246px;
       padding: 35px;
     }
   }
