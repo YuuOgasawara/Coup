@@ -1,14 +1,22 @@
 *{
   box-sizing: border-box;
 }
+body{
+  margin: 0;
+}
 button{
   border: none;
   background: transparent;
 }
 ul{
   padding: 0;
+  margin: 0;
 }
 dd{
+  margin: 0;
+}
+
+p{
   margin: 0;
 }
 
@@ -23,6 +31,7 @@ h2{
   color: #DD1B57;
   font-size: 40px;
   font-weight: bold;
+  margin: 0;
 }
 
 li{
@@ -110,20 +119,28 @@ a{
 }
 
 .contents{
-  width: 1400px;
+  width: 1110px;
   margin: 0 auto;
 }
 
 
 .c-news_list{
+  width: 855px;
   li{
     border-bottom: 1px solid #E8E8E8;
-    padding: 20px 0;
+    padding: 15px 0;
+  }
+
+  span{
+    font-family: sans-serif;
+    font-size: 100%;
+    font-weight: 500;
   }
 
   .c-news_day{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
   }
+
 }
 
 //トップページ
@@ -137,38 +154,44 @@ a{
   position: relative;
   margin: 90px 0 0;
   &::before{
-    position: absolute;
-    content: "SERVICE";
-    top: -20%;
-    right: 0;
     color: #F2F2F2;
+    content: "SERVICE";
+    font-family: 'Roboto';
     font-size: 168px;
-    font-weight: bold;
+    font-weight: bold;    
+    position: absolute;
+    right: -2.5%;
+    top: -9%;
     z-index: -1;
   }
   .service__list{
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin: 45px 0 0;
+    margin: 50px 0 0;
   }
   .service__item{
-    width: 350px;
-    min-height: 266px;
+    background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 5px #333;
     display: block;
-    padding: 33px;
+    padding: 50px;
+    min-height: 266px;
+    width: 350px;
   }
   .service__title{
     text-align: center;
-    margin: 0 0 12px;  
+    margin: 0 0 20px;  
   }
   .service__subtitle{
+    font-family: sans-serif;
     font-size: 18px;
     font-weight: bold;
   }
   .service__explanation{
+    font-family: sans-serif;
+    font-size: 88%;
+    font-weight: 500;
     margin: 20px 0 0;
   }
 }
@@ -232,10 +255,10 @@ a{
   display: flex;
   justify-content: flex-start;
   flex-flow: column;
-  gap: 15px;
+  gap: 20px;
   width: 100%;
   margin: 90px 0 0;
-  padding: 60px 60px 50px 160px;
+  padding: 60px 165px 50px;
   background: #DD1B57;
   color: #fff;
   font-size: 14px;
@@ -244,7 +267,7 @@ a{
 
 .footer__list{
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 .footer__link{
@@ -254,15 +277,17 @@ a{
 //PC版
 @media screen and (min-width: 769px) {
   .header__menu{
-    padding: 25px 35px;
+    padding: 28px 70px;
   }
   .news{
-    gap: 64px;
+    gap: 90px;
   }
   .c-news_link{
-    display: flex;
     align-items: center;
-    gap: 20px;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 94%;
+    gap: 15px;
   }
 
   .message{
