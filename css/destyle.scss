@@ -95,11 +95,11 @@ a{
     right: 0;
   }
   .spMenu__list{
-    margin: 85px 0 0;
+    margin: 90px 0 0;
     text-align: center;
   }
   .spMenu__item{
-    margin: 0 0 20px;
+    margin: 0 0 25px;
   }
   .spMenu__link{
     color: #fff;
@@ -129,12 +129,16 @@ a{
   li{
     border-bottom: 1px solid #E8E8E8;
     padding: 15px 0;
+    &:first-child{
+      padding: 0 0 15px;
+    }
   }
 
   span{
     font-family: sans-serif;
     font-size: 100%;
     font-weight: 500;
+    line-height: 27px;
   }
 
   .c-news_day{
@@ -192,6 +196,7 @@ a{
     font-family: sans-serif;
     font-size: 88%;
     font-weight: 500;
+    line-height: 24px;
     margin: 20px 0 0;
   }
 }
@@ -261,7 +266,6 @@ a{
   padding: 60px 165px 50px;
   background: #DD1B57;
   color: #fff;
-  font-size: 14px;
   font-weight: bold;
 }
 
@@ -272,6 +276,13 @@ a{
 
 .footer__link{
   color: #fff;
+  font-family: sans-serif;
+  font-size: 88%;
+}
+
+.footer__copyright{
+  font-family: 'Roboto';
+  font-size: 75%;
 }
 
 //PC版
@@ -283,7 +294,6 @@ a{
     gap: 90px;
   }
   .c-news_link{
-    align-items: center;
     display: flex;
     font-family: sans-serif;
     font-size: 94%;
@@ -314,7 +324,7 @@ a{
 
   h2{
     font-size: 32px;
-    margin: 20px 0 0;
+    margin: 20px 0;
   }
 
   .header__menu{
@@ -332,19 +342,30 @@ a{
 //ニュース
   .news{
     flex-flow: column;
-    .c-news_list{
-      padding: 0;
+    margin: 40px 0 0;
+  }
+  .c-news_list{
+    padding: 0;
+    width: 100%;
+    span{
+      font-size: 94%;
+      line-height: 24px;
     }
   }
+  .c-news_link{
+    display: flex;
+    flex-flow: column;
+  }
   .c-news_day{
-    margin: 0 0 5px;
+    font-weight: 500;
+    font-size: 94%;
   }
 //ニュースここまで
 //サービス
   .service{
-    margin: 50px 0 0;
+    margin: 52px 0 0;
     &::before{
-      top: -2%;
+      top: -2px;
       right: -5%;
       font-size: 70px;
     }
@@ -353,11 +374,12 @@ a{
       flex-flow: column;
       gap: 20px;
       padding: 0;
-      margin: 15px 0 0;
+      margin: 0;
     }
     .service__item{
       min-height: 246px;
-      padding: 35px;
+      padding: 45px 30px 40px;
+      width: 100%;
     }
   }
 //サービスここまで
@@ -384,10 +406,22 @@ a{
 }
 
 //メッセージここまで
+  footer{
+    .footer__container{
+      gap: 25px;
+      margin: 75px 0 0;
+      padding: 42px 20px 32px;
+    }
+    .footer__list{
+      gap: 25px;
+    }
+    .footer__link{
+      font-size: 75%;
+    }
 
-  .footer__container{
-    gap: 20px;
-    margin: 70px 0 0;
-    padding: 40px 20px 30px;
+    .footer__copyright{
+      font-size: 62%;
+    }
   }
+  
 }

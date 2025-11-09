@@ -95,11 +95,11 @@ a:hover {
   right: 0;
 }
 .spMenu .spMenu__list {
-  margin: 85px 0 0;
+  margin: 90px 0 0;
   text-align: center;
 }
 .spMenu .spMenu__item {
-  margin: 0 0 20px;
+  margin: 0 0 25px;
 }
 .spMenu .spMenu__link {
   color: #fff;
@@ -129,10 +129,14 @@ a:hover {
   border-bottom: 1px solid #E8E8E8;
   padding: 15px 0;
 }
+.c-news_list li:first-child {
+  padding: 0 0 15px;
+}
 .c-news_list span {
   font-family: sans-serif;
   font-size: 100%;
   font-weight: 500;
+  line-height: 27px;
 }
 .c-news_list .c-news_day {
   font-family: "Roboto";
@@ -187,6 +191,7 @@ a:hover {
   font-family: sans-serif;
   font-size: 88%;
   font-weight: 500;
+  line-height: 24px;
   margin: 20px 0 0;
 }
 
@@ -240,7 +245,6 @@ a:hover {
   padding: 60px 165px 50px;
   background: #DD1B57;
   color: #fff;
-  font-size: 14px;
   font-weight: bold;
 }
 
@@ -251,6 +255,13 @@ a:hover {
 
 .footer__link {
   color: #fff;
+  font-family: sans-serif;
+  font-size: 88%;
+}
+
+.footer__copyright {
+  font-family: "Roboto";
+  font-size: 75%;
 }
 
 @media screen and (min-width: 769px) {
@@ -261,7 +272,6 @@ a:hover {
     gap: 90px;
   }
   .c-news_link {
-    align-items: center;
     display: flex;
     font-family: sans-serif;
     font-size: 94%;
@@ -285,7 +295,7 @@ a:hover {
   }
   h2 {
     font-size: 32px;
-    margin: 20px 0 0;
+    margin: 20px 0;
   }
   .header__menu {
     padding: 0 0 0 25px;
@@ -300,18 +310,29 @@ a:hover {
   }
   .news {
     flex-flow: column;
+    margin: 40px 0 0;
   }
-  .news .c-news_list {
+  .c-news_list {
     padding: 0;
+    width: 100%;
+  }
+  .c-news_list span {
+    font-size: 94%;
+    line-height: 24px;
+  }
+  .c-news_link {
+    display: flex;
+    flex-flow: column;
   }
   .c-news_day {
-    margin: 0 0 5px;
+    font-weight: 500;
+    font-size: 94%;
   }
   .service {
-    margin: 50px 0 0;
+    margin: 52px 0 0;
   }
   .service::before {
-    top: -2%;
+    top: -2px;
     right: -5%;
     font-size: 70px;
   }
@@ -320,11 +341,12 @@ a:hover {
     flex-flow: column;
     gap: 20px;
     padding: 0;
-    margin: 15px 0 0;
+    margin: 0;
   }
   .service .service__item {
     min-height: 246px;
-    padding: 35px;
+    padding: 45px 30px 40px;
+    width: 100%;
   }
   .message .message__title {
     font-size: 24px;
@@ -344,9 +366,18 @@ a:hover {
     width: 100%;
     height: 260px;
   }
-  .footer__container {
-    gap: 20px;
-    margin: 70px 0 0;
-    padding: 40px 20px 30px;
+  footer .footer__container {
+    gap: 25px;
+    margin: 75px 0 0;
+    padding: 42px 20px 32px;
+  }
+  footer .footer__list {
+    gap: 25px;
+  }
+  footer .footer__link {
+    font-size: 75%;
+  }
+  footer .footer__copyright {
+    font-size: 62%;
   }
 }/*# sourceMappingURL=destyle.css.map */
