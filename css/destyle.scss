@@ -226,13 +226,19 @@ a{
     margin: 0 25px 28px 0;
   }
 
-
+  .message__sentence{
+    a{
+      color: #349BF4;
+      text-decoration: underline;
+    }
+  }
 }
 
 //メッセージここまで
 
 //会社概要
 .overview{
+  margin: 0 0 70px;
   .overview__list{
     margin: 70px 0 50px;
   }
@@ -264,7 +270,6 @@ a{
   flex-flow: column;
   gap: 20px;
   width: 100%;
-  margin: 100px 0 0;
   padding: 60px 165px 50px;
   background: #DD1B57;
   color: #fff;
@@ -305,6 +310,17 @@ a{
   .message{
     .message__main{
       width: 790px;
+    }
+    .message__sentence{
+      a:hover{
+        text-decoration: none;
+      }
+    }
+  }
+
+  footer{
+    .footer__container{
+        margin: 100px 0 0;
     }
   }
 }
@@ -376,7 +392,7 @@ a{
       flex-flow: column;
       gap: 20px;
       padding: 0;
-      margin: 0;
+      margin: 0 0 75px;
     }
     .service__item{
       min-height: 246px;
@@ -388,17 +404,19 @@ a{
 
 //メッセージ
 .message{
+  margin: 40px 0 60px;
   .message__title{
     font-size: 24px;
-  }
-  .message__subtitle{
-    margin: 25px 0 0;
+    margin: 0 0 15px;
   }
   .message__main{
-    margin: 25px 0 40px;
+    margin: 25px 0 50px;
   }
   .message__sentence{
     font-size: 15px;
+  }
+  .message__ceo{
+    margin: 0 15px 17px 0;
   }
   .message__office{
     object-fit: cover;
@@ -411,7 +429,6 @@ a{
   footer{
     .footer__container{
       gap: 25px;
-      margin: 75px 0 0;
       padding: 42px 20px 32px;
     }
     .footer__list{

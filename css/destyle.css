@@ -215,7 +215,14 @@ a:hover {
   float: left;
   margin: 0 25px 28px 0;
 }
+.message .message__sentence a {
+  color: #349BF4;
+  text-decoration: underline;
+}
 
+.overview {
+  margin: 0 0 70px;
+}
 .overview .overview__list {
   margin: 70px 0 50px;
 }
@@ -243,7 +250,6 @@ a:hover {
   flex-flow: column;
   gap: 20px;
   width: 100%;
-  margin: 100px 0 0;
   padding: 60px 165px 50px;
   background: #DD1B57;
   color: #fff;
@@ -281,6 +287,12 @@ a:hover {
   }
   .message .message__main {
     width: 790px;
+  }
+  .message .message__sentence a:hover {
+    text-decoration: none;
+  }
+  footer .footer__container {
+    margin: 100px 0 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -343,24 +355,28 @@ a:hover {
     flex-flow: column;
     gap: 20px;
     padding: 0;
-    margin: 0;
+    margin: 0 0 75px;
   }
   .service .service__item {
     min-height: 246px;
     padding: 45px 30px 40px;
     width: 100%;
   }
+  .message {
+    margin: 40px 0 60px;
+  }
   .message .message__title {
     font-size: 24px;
-  }
-  .message .message__subtitle {
-    margin: 25px 0 0;
+    margin: 0 0 15px;
   }
   .message .message__main {
-    margin: 25px 0 40px;
+    margin: 25px 0 50px;
   }
   .message .message__sentence {
     font-size: 15px;
+  }
+  .message .message__ceo {
+    margin: 0 15px 17px 0;
   }
   .message .message__office {
     -o-object-fit: cover;
@@ -370,7 +386,6 @@ a:hover {
   }
   footer .footer__container {
     gap: 25px;
-    margin: 75px 0 0;
     padding: 42px 20px 32px;
   }
   footer .footer__list {
