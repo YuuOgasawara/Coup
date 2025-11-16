@@ -125,7 +125,6 @@ a{
 
 
 .c-news_list{
-  width: 855px;
   li{
     border-bottom: 1px solid #E8E8E8;
     padding: 15px 0;
@@ -156,7 +155,7 @@ a{
 .service{
   display: block;
   position: relative;
-  margin: 90px 0 0;
+  margin: 90px 0 100px;
   &::before{
     color: #F2F2F2;
     content: "SERVICE";
@@ -207,7 +206,7 @@ a{
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin: 60px 0 0;
+  margin: 60px 0 100px;
 
   .message__subtitle{
     text-align: center;
@@ -238,24 +237,25 @@ a{
 
 //会社概要
 .overview{
-  margin: 0 0 70px;
+  margin: 0 0 110px;
   .overview__list{
-    margin: 70px 0 50px;
+    margin: 60px 0 50px;
   }
   
   .overview__element{
-    display: flex;
     align-items: center;
-    gap: 120px;
     border-bottom: 1px solid #E8E8E8;
-    padding: 25px 20px;
+    display: flex;
+    font-size: 94%;
+    gap: 176px;
+    padding: 30px;
   }
   .overview__title{
     font-weight: bold;
     min-width: 80px;
   }
   .overview__map{
-    margin: 0 0 110px;
+    margin: 0 0 117px;
     iframe{
       width: 100%;
     }
@@ -299,12 +299,17 @@ a{
   }
   .news{
     gap: 90px;
+    .c-news_list{
+      width: 855px;
+    }
   }
   .c-news_link{
+    align-items: center;
     display: flex;
-    font-family: sans-serif;
+    font-weight: 500;
     font-size: 94%;
-    gap: 15px;
+    gap: 20px;
+    line-height: 2.7;
   }
 
   .message{
@@ -315,12 +320,6 @@ a{
       a:hover{
         text-decoration: none;
       }
-    }
-  }
-
-  footer{
-    .footer__container{
-        margin: 100px 0 0;
     }
   }
 }
@@ -426,6 +425,12 @@ a{
 }
 
 //メッセージここまで
+
+.overview{
+  .overview__element{
+    gap: 70px;
+  }
+}
   footer{
     .footer__container{
       gap: 25px;
