@@ -1,8 +1,9 @@
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
+  font-family: "Roboto", "Noto Sans JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   margin: 0;
 }
 
@@ -16,11 +17,7 @@ ul {
   margin: 0;
 }
 
-dd {
-  margin: 0;
-}
-
-p {
+dd, p {
   margin: 0;
 }
 
@@ -145,25 +142,22 @@ a:hover {
 }
 
 .service {
-  margin: 90px 0 100px;
-}
-.service h2 {
   display: block;
   position: relative;
+  margin: 90px 0 100px;
 }
-.service h2::before {
+.service::before {
   color: #F2F2F2;
   content: "SERVICE";
   display: block;
   font-family: "Roboto";
   font-size: 168px;
   font-weight: bold;
-  height: 168px;
+  line-height: 1;
   position: absolute;
-  right: 30%;
-  top: 85%;
+  right: 28%;
+  top: 16%;
   transform: translate(50%, -50%);
-  width: 627px;
   z-index: -1;
 }
 .service .service__list {
@@ -351,14 +345,11 @@ a:hover {
   .service {
     margin: 52px 0 0;
   }
-  .service h2::before {
+  .service::before {
     font-size: 70px;
-    height: 70px;
-    line-height: 1.7;
-    right: -6%;
-    transform: translate(0, -50%);
-    top: 45%;
-    width: 279px;
+    right: -46%;
+    transform: translate(-50%, -48%);
+    top: 5%;
   }
   .service .service__list {
     align-items: center;
