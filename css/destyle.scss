@@ -153,23 +153,25 @@ a{
 }
 
 .service{
-  display: block;
-  position: relative;
   margin: 90px 0 100px;
-  &::before{
-    color: #F2F2F2;
-    content: "SERVICE";
+  h2{
     display: block;
-    font-family: 'Roboto';
-    font-size: 168px;
-    font-weight: bold;
-    height: 995px;
-    position: absolute;
-    right: 22px;
-    top: -9%;
-    transform: translate(0, 0);
-    width: 627px;
-    z-index: -1;
+    position: relative;
+    &::before{
+      color: #F2F2F2;
+      content: "SERVICE";
+      display: block;
+      font-family: "Roboto";
+      font-size: 168px;
+      font-weight: bold;
+      height: 168px;
+      position: absolute;
+      right: 30%;
+      top: 85%;
+      transform: translate(50%, -50%);
+      width: 627px;
+      z-index: -1;
+    }
   }
   .service__list{
     display: flex;
@@ -345,7 +347,7 @@ a{
 
   h2{
     font-size: 200%;
-    margin: 20px 0;
+    margin: 0 0 20px;
   }
 
   .header__menu{
@@ -385,13 +387,16 @@ a{
 //サービス
   .service{
     margin: 52px 0 0;
-    &::before{
-      font-size: 70px;
-      height: 70px;
-      right: -6%;
-      top: 0;
-      transform: translate(0, 2%);
-      width: 279px;
+    h2{
+      &::before{
+        font-size: 70px;
+        height: 70px;
+        line-height: 1.7;
+        right: -6%;
+        transform: translate(0, -50%);
+        top: 45%;
+        width: 279px;
+      }
     }
     .service__list{
       align-items: center;

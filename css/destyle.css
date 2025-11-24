@@ -145,22 +145,24 @@ a:hover {
 }
 
 .service {
-  display: block;
-  position: relative;
   margin: 90px 0 100px;
 }
-.service::before {
+.service h2 {
+  display: block;
+  position: relative;
+}
+.service h2::before {
   color: #F2F2F2;
   content: "SERVICE";
   display: block;
   font-family: "Roboto";
   font-size: 168px;
   font-weight: bold;
-  height: 995px;
+  height: 168px;
   position: absolute;
-  right: 22px;
-  top: -9%;
-  transform: translate(0, 0);
+  right: 30%;
+  top: 85%;
+  transform: translate(50%, -50%);
   width: 627px;
   z-index: -1;
 }
@@ -313,7 +315,7 @@ a:hover {
   }
   h2 {
     font-size: 200%;
-    margin: 20px 0;
+    margin: 0 0 20px;
   }
   .header__menu {
     padding: 0 0 0 25px;
@@ -349,12 +351,13 @@ a:hover {
   .service {
     margin: 52px 0 0;
   }
-  .service::before {
+  .service h2::before {
     font-size: 70px;
     height: 70px;
+    line-height: 1.7;
     right: -6%;
-    top: 0;
-    transform: translate(0, 2%);
+    transform: translate(0, -50%);
+    top: 45%;
     width: 279px;
   }
   .service .service__list {
