@@ -110,6 +110,29 @@ a:hover {
 .header__mv {
   width: 100%;
 }
+.header__mv .header__mv-pc {
+  position: relative;
+}
+.header__mv .header__mv-pc img {
+  height: 600px;
+}
+.header__mv .header__mv-pc h1 {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__mv .header__mv-pc .header__mv-title {
+  color: #fff;
+  font-size: 500%;
+  font-weight: bold;
+}
+.header__mv .header__mv-pc .header__mv-subtitle {
+  color: #fff;
+  font-size: 75%;
+  font-weight: bold;
+}
 .header__mv img {
   width: 100%;
 }
